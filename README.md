@@ -1,2 +1,7 @@
-# oim3640
-Course work for OIM3640
+# OIM3640 - 2026 Spring
+This is my course work for OIM3640.
+
+# About Me
+- Name: Natalie Molendyk
+- Concentration: Business Analytics
+- Interests: playing volleyball, golf, baking, data science, dogs
