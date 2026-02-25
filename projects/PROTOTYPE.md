@@ -1,17 +1,19 @@
-# create function to calculate tax
-def calc_tax(amount, tax):
-amount = 20
-
 # calculating with Massachusetts tax for a restaurant
+def calc_tax(amount):
     tax = amount * 0.07
     tax_bill = amount + tax
-
-print('${tax_bill}')
+    return(tax_bill)
 
 # adding tip into calculator
-def calc_tip(tax_amount, tip)
+def calc_tip(tax_bill)
+    tip = tax_bill * 0.20
+    bill = tax_bill + tip
+    return(bill)
 
-tip = tax_amount * 0.20
-bill = tax_amount + tip
+# input amount and tip
+amount = 20
+tax_bill = calc_tax(amount)
+final_bill = calc_tip(tax_bill)
 
-print('${bill}')
+
+print(f'Total bill: ${bill}')
