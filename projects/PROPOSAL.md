@@ -10,10 +10,12 @@ I chose this because I am struggling to figure out tips percentages in my head a
 This calculator will take the inputed percentage of the tip and apply it to the bill amount.
 It will convert the percentage to an amount.
 It will sum the tip, tax and the amount together.
-This calculator will then divide the bill evenly or based on the weighting of each person's amount.
+This calculator will then divide the bill evenly or based on the weighting of each person's amount (percentage of the bill each person's meal cost).
+The user will input the amount of their bill into the calculator.
 
 **What I don't know yet:**
-I don't know how to make the calculator split the bill with different weightings for each person.
+I don't know how to make the calculator split the bill with different weightings for each person (percentage of the bill each person's meal cost).
 I need to figure out how to hard code a table of rates.
 I need to figure out how to convert the percentage to an amount and round the value correctly.
-I would have to input the tax manually because it could differ from states.
+I would have to input the tax manually because it could differ from states (I would optimally want a dropdown menu and the user chooses the state with the connected tax, but I am not connecting this calculator to a website).
+I want to add a fairness feature that shows who pays more or less when splitting unevenly (this would be connected to the weightings), but I'm not sure how to connect it.
