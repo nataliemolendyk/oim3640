@@ -1,7 +1,3 @@
-"""
-Bill Splitter with Fairness Feature
-Calculates tip, tax, and splits bills proportionally by meal cost.
-"""
 
 # State tax rates (percentage)
 STATE_TAXES = {
@@ -21,7 +17,7 @@ STATE_TAXES = {
 
 def display_state_menu():
     """Display available states for tax rate selection."""
-    print("\nAvailable states:")
+    print("Available states:")
     for i, state in enumerate(sorted(STATE_TAXES.keys()), 1):
         print(f"  {i}. {state}")
     print(f"  {len(STATE_TAXES) + 1}. Enter custom tax rate manually")
@@ -31,7 +27,7 @@ def get_tax_rate():
     """Get tax rate from user via state selection or manual entry."""
     while True:
         display_state_menu()
-        choice = input("\nEnter choice (number): ").strip()
+        choice = input("Enter choice (number): ").strip()
         
         states_list = sorted(STATE_TAXES.keys())
         if choice.isdigit():
@@ -60,7 +56,7 @@ def get_number_of_people():
     """Get number of people splitting the bill."""
     while True:
         try:
-            num = int(input("\nHow many people are splitting the bill? "))
+            num = int(input("How many people are splitting the bill? "))
             if num < 1:
                 print("Must be at least 1 person.")
                 continue
@@ -72,7 +68,7 @@ def get_number_of_people():
 def get_meal_costs(num_people):
     """Get meal cost for each person."""
     costs = []
-    print("\nEnter meal cost for each person:")
+    print("Enter meal cost for each person:")
     for i in range(num_people):
         while True:
             try:
@@ -92,7 +88,7 @@ def get_tip_percentage():
     """Get tip percentage from user."""
     while True:
         try:
-            tip = float(input("\nEnter tip percentage (e.g., 20): "))
+            tip = float(input("Enter tip percentage (e.g., 20): "))
             if tip < 0:
                 print("Tip percentage cannot be negative. Try again.")
                 continue
@@ -156,16 +152,16 @@ def round_and_adjust_shares(shares):
 
 def display_breakdown(meal_costs, shares, adjusted_shares, pretax_total, tax_amount, tip_amount, final_bill):
     """Display detailed breakdown including fairness metrics."""
-    print("\n" + "=" * 60)
+    print(" " + "=" * 60)
     print("BILL BREAKDOWN")
     print("=" * 60)
     
-    print(f"\nSubtotal (meals):     ${pretax_total:.2f}")
+    print(f"Subtotal (meals):     ${pretax_total:.2f}")
     print(f"Tax:                  ${tax_amount:.2f}")
     print(f"Tip:                  ${tip_amount:.2f}")
     print(f"FINAL BILL:           ${final_bill:.2f}")
     
-    print("\n" + "-" * 60)
+    print(" " + "-" * 60)
     print("SPLIT BREAKDOWN & FAIRNESS")
     print("-" * 60)
     
@@ -173,7 +169,7 @@ def display_breakdown(meal_costs, shares, adjusted_shares, pretax_total, tax_amo
         difference = actual_share - ideal_share
         difference_sign = "+" if difference > 0 else ""
         
-        print(f"\nPerson {i + 1}:")
+        print(f"Person {i + 1}:")
         print(f"  Meal cost:          ${meal:.2f} ({meal/pretax_total*100:.1f}% of meals)")
         print(f"  Fair share:         ${ideal_share:.2f}")
         print(f"  Pays:               ${actual_share:.2f}")
@@ -186,14 +182,14 @@ def display_breakdown(meal_costs, shares, adjusted_shares, pretax_total, tax_amo
         else:
             print(f"  ✓ Pays fair share")
     
-    print("\n" + "=" * 60)
+    print(" " + "=" * 60)
     print(f"Total checked: ${sum(adjusted_shares):.2f}")
     print("=" * 60)
 
 
 def run_calculator():
     """Main workflow for bill splitter."""
-    print("\n" + "=" * 60)
+    print(" " + "=" * 60)
     print("BILL SPLITTER WITH FAIRNESS FEATURE")
     print("=" * 60)
     
@@ -220,9 +216,9 @@ def main():
     while True:
         run_calculator()
         
-        again = input("\nCalculate another bill? (yes/no): ").strip().lower()
+        again = input("Calculate another bill? (yes/no): ").strip().lower()
         if again not in ["yes", "y"]:
-            print("\nThank you for using Bill Splitter! Goodbye.")
+            print("Thank you for using Bill Splitter! Goodbye.")
             break
 
 
