@@ -5,7 +5,7 @@ def calc_tax(amount):
     return(tax_bill)
 
 # adding tip into calculator
-def calc_tip(tax_bill)
+def calc_tip(tax_bill):
     tip = tax_bill * 0.20
     bill = tax_bill + tip
     return(bill)
@@ -16,4 +16,5 @@ tax_bill = calc_tax(amount)
 final_bill = calc_tip(tax_bill)
 
 
-print(f'Total bill: ${bill}')
+print(f'Total bill: ${final_bill}')
+
