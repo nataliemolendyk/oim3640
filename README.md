@@ -7,4 +7,4 @@ This is my course work for OIM3640.
 - Interests: playing volleyball, golf, baking, data science, dogs
 
 # My Projects
-- [First Project](./projects/project-1)
+- [Tax, Tip, and Bill Calculator and Splitter](./project%201/PROJECT1.py) - Calculates the bill at a restaurant and splits it among multiple people
