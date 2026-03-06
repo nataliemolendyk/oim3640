@@ -1,0 +1,5 @@
+## What it does
+The app I created is a restaurant bill calculator that uses the tax from the user's desired state and applies it to the bill. After that, the user chooses the tip percentage wanted and it is applied to the bill with the tax already applied. The user chooses how many people they want to split the bill and the weightings of each person's meal is calculated after. It will then apply the uneven dollar amount if the split is uneven, by a couple cents, to the person with the highest bill and show whether each person overpays, underpays, or pays their fair share.
+
+## How to run it
+The user is first asked which state they are in and the user should input the coordinated number with the states given. The user is then asked how many people are splitting the bill. After, the user is to input each person's meal cost as well as the tip percentage. The calculator is then ran and then the user is asked if they want to calculate another bill or not with a yes or no question.
