@@ -11,3 +11,5 @@ An issue I have with this app is some days are busier than others and I can't mo
 
 ## Week 7
 A new pain point that I have come across is creating outfits each day without repeating. More specifically, I wanted to try out new outfits at the beginning of the year and I've noticed that I rewear the same pieces of clothing every week. I think an app or website could be beneficial for this pain point that tracks all of the clothes I have and I can create outfits without having to try everything on. I think merging this with Pinterest could help provide inspiration for my outfits with the clothes I have.
+
+## Week 8
