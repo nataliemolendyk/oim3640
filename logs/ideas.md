@@ -14,3 +14,5 @@ A new pain point that I have come across is creating outfits each day without re
 
 ## Week 8
 I think an app that randomly chooses different pieces of clothing from my closet and puts them together could solve this problem. I feel like this would get me out of my comfort zone and try new colors together. In order to make these outfits, the app would have to categorize the piece of clothing by type and then choose from each category. A feature that could be added on is a weather setting that takes the weather outside and bases the outfit off of that. So for example, if it was warm, the app wouldn't give me a sweater, it would know to give me a tshirt.
+
+## Week 9
