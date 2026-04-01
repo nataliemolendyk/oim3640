@@ -7,7 +7,7 @@ I am building a song lyrics analyzer that analyzes songs in Sienna Spiro's album
 I chose this as my project because Sienna Spiro is my favorite artist currently and I noticed all her songs are sad, but I can't seem to figure out if they are all about the same things are about different things. I also wanted to see if her writing has changed throughout the years with the same genre. The problem that this is solving is my interest in what the songs are truly about and if any have commonalities.
 
 **Core features:** 
-Takes the files of each song's lyrics
+Takes the files of each song's lyrics after I have implemented each 
 Compares older songs to newer songs
 Finds common words in the songs
 Uses lyrics to find deeper meaning in songs
