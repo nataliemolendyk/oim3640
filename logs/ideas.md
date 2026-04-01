@@ -17,3 +17,5 @@ I think an app that randomly chooses different pieces of clothing from my closet
 
 ## Week 9
 This week I have noticed many weather changes than what I expected and while I think having outfit recommendations would help, I feel like it is out of the scope of the app and more of an app that requires outside sources to provide that data. I still think that having a calendar and list of my clothes in my closet will be helpful with taking the pressure off of trying to find an outfit everyday that fits my needs.
+
+## Week 10
