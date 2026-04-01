@@ -1,22 +1,40 @@
 ## My Project Proposal
 
 **What I'm building:** 
-I am building a song lyrics analyzer that analyzes songs in Sienna Spiro's singles to see if her songs have kept the same thematic categories and emotional narratives behind them throughout the years or if it has changed/shifts in tone.
+I am building a song lyrics analyzer that examines my top 5 favorite songs by Sienna Spiro to identify common emotional themes and determine if her lyrics consistently explore similar topics or if her themes have shifted over time.
 
 **Why I chose this:** 
-I chose this as my project because Sienna Spiro is my favorite artist currently and I noticed all her songs are sad, but I can't seem to figure out if they are all about identical topics or about different topics. I also wanted to see if her writing has changed throughout the years with the same genre. The problem that this is solving is my interest in what the songs are truly about and if they have any commonalities. I will choose the amount of songs I am analyzing to compare my top 5 favorite songs as well as 5 other songs I don't know.
+Sienna Spiro is my favorite artist, and while I notice all her songs feel sad, I want to understand if they're about the same emotional experiences or different ones. This analyzer will reveal thematic patterns and common threads across her work.
 
 **Core features:** 
-Takes the files of each song's lyrics after I have linked the file of each song (pasting text files of lyrics (local), not web scraped)
-Removes stopwords and lemmatize
-Identify key themes and map each song to those themes with a short note
-Compares 10 songs
-Finds common words in the songs by doing a sentiment anlysis by sorting words into emotional categories (joy, sadness, anger)
-Songs would be compared to see sentiment shifts
-Would show which songs are similar and which are different in a comparison table by having the word counts for each song and sentiment scores
-A meaningful finding would be 5+ shared words = similar theme
+- Load 5 pre-saved song lyric text files (read .txt files from GeniusLyrics)
+- Remove stopwords using NLTK (keep only meaningful words)
+- Remove punctuation and duplicates of words
+- Count emotional keywords in 5 categories: heartbreak, loneliness, regret, disappointment, grief
+    - Definitions:
+        - heartbreak: misery, heartache, sorrow, devastation
+        - loneliness: isolation, longing, distress, alienation
+        - regret: remorse, compunction, rue, misgiving
+        - disappointment: letdown, unhappiness, frustration, disillusionment
+        - grief: anguish, disbelievement, guilt, anger
+    - Percentage calculation: for each category, percentage = (number of matching keywords / total meaningful words after stopword removal) * 100
+        - Matching keywords means the words are the exact same
+- Generate a comparison table showing:
+  - Song Title | Year | heartbreak% | loneliness% | regret% | 
+  disappointment% | grief%
+  - Print the table using print statements
+  -Songs with Years:
+    -Die on this Hill (2025)
+    -You Stole the Show (2025)
+    -The Visitor (2025)
+    -Maybe (2025)
+    -Back to Blonde (2025)
+- Identify the dominant emotion for each song (the emotion that has the highest percentage in the comparison table)
+- Compare average emotion profiles across all 5 songs to determine theme consistency
+    - If 4+ songs share the same dominant emotion (±15% variance), conclude that themes are consistent. Otherwise, themes have shifted. (Note: Since all songs are from 2025, focus on consistency rather than temporal shifts.)
+        - 15 variance means that the dominant emotion's percentage must be within 15% of the group's average
+    - Variance measurement: the standard deviation of the percentages across the 5 emotion categories for each song
 
 **What I don't know yet:** 
-I don't know how many songs I want to compare yet (resolved)
-I don't know how to only pick out words that are important to the meaning and aren't just filler words
-I need to figure out how I could create the code to actually find the deeper meanings (possibly with the use of key words in the song).
+- Exact year/release date for each song (Researched)
+- Best method to manually define emotional keywords per category
