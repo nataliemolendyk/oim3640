@@ -15,10 +15,9 @@ import os
 
 load_dotenv()
 API_KEY = os.getenv("OPENWEATHER_API_KEY")  # Don't hardcode this!
-url = (f'https://api.openweathermap.org/data/2.5/weather'
-       f'?q=Boston&appid={API_KEY}&units=imperial')
+url = (f'https://api.openweathermap.org/data/2.5/weather?q=Wellesley&appid={API_KEY}&units=imperial')
 
 print(url)
 
 data = requests.get(url).json()
-print(f"Boston: {data['main']['temp']}°F")
+print(f"Wellesley: {data['main']['temp']}°F")
