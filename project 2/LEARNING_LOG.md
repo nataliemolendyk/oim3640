@@ -19,3 +19,14 @@ I didn't understand the requests function and how that could be turned into read
 
 **What I learned:**
 I learned that I can't use open reader for URL files and I have to make it as a request and then convert it to a reader. I also don't think my keyword counter is doing what I want it to, it is only looking for those five words in the songs, not the themes.
+
+## Date: 2025-04-02
+
+**What I asked AI to do:**
+I asked AI to help transform my proposal into code while using my prototype as a basis.
+
+**What I didn't understand in the generated code:**
+I haven't looked deeply into the output yet, so I'm not sure as of right now.
+
+**What I learned:**
+I learned that I have to be specific with what I ask AI chatbot to do because it gives me written answers instead of code if I don't ask it correctly.
