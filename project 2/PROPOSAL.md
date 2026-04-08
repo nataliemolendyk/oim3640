@@ -7,7 +7,7 @@ I am building a song lyrics analyzer that examines my top 5 favorite songs by Si
 Sienna Spiro is my favorite artist, and while I notice all her songs feel sad, I want to understand if they're about the same emotional experiences or different ones. This analyzer will reveal thematic patterns and common threads across her work.
 
 **Core features:** 
-- Load 5 song text files from raw HTML (read URL files from GeniusLyrics)
+- Load 5 song text files from API 
 - Remove stopwords using NLTK (keep only meaningful words)
 - Remove punctuation and duplicates of words
 - Count emotional keywords in 5 categories: heartbreak, loneliness, regret, disappointment, grief
