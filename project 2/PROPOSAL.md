@@ -26,7 +26,7 @@ Sienna Spiro is my favorite artist, and while I notice all her songs feel sad, I
     -Back to Blonde (2024)
 - Identify the dominant emotion for each song (the emotion that has the highest percentage in the comparison table)
 - Compare average emotion profiles across all 5 songs to determine theme consistency
-    - Count how many times each dominant emotion appears
+    - Percentage of each dominant emotion in each song
     - Get the most frequent dominant emotion in the songs
     - If 4 songs contain the top emotion, the themes acros songs will be consistent otherwise the themes have shifted
 - Find the standard deviation of each song
