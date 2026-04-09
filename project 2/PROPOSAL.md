@@ -25,13 +25,14 @@ Sienna Spiro is my favorite artist, and while I notice all her songs feel sad, I
     -Maybe (2025)
     -Back to Blonde (2024)
 - Identify the dominant emotion for each song (the emotion that has the highest percentage in the comparison table)
-- Compare average emotion profiles across all 5 songs to determine theme consistency
-    - Percentage of each dominant emotion in each song
-    - Get the most frequent dominant emotion in the songs
-    - If 4 songs contain the top emotion, the themes acros songs will be consistent otherwise the themes have shifted
+- Compare average emotion percentages across all 5 songs to determine theme consistency
+    - Percentage of each emotion in each song
+        - Threshold is 15 points +/- for each percentage
+    - Get the dominant emotion in each of the songs
+    - If 4 songs contain the top emotion and the scores stay in the 15 point range, the themes across songs will be consistent otherwise the themes have shifted
 - Find the standard deviation of each song
     - Low values means that the song's emotions are consistent or around the same level
-    - High values means that the song's emotions have a mix of emotions/emotional tones.
+    - High values means that the song's emotions have a mix of emotions/emotional tones
 
 **What I don't know yet:** 
 - Exact year/release date for each song (Researched)
