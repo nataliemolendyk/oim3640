@@ -23,3 +23,5 @@ I know many apps have been created for meal plan/diet, but I feel like it would 
 
 ## Week 11
 I tried the meals and I enjoyed the convenience of having them delivered to me, so I would want to make an app/service that isn't as expensive. I think some useful features would be putting in information about yourself so the app can be personalized to help with weight loss journey potentially. I think it would have to take data from medical websites to provide accurate recommendations and factual information. A feature that other platforms don't have is providing student discounts. For example, I used CookUnity and it was pretty expensive. This is preventing me from wanting to buy more meals, but if a student discount was provided, I would want to buy more, since I like the convenience.
+
+## Week 12
