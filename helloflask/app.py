@@ -23,6 +23,10 @@ def stock(ticker):
     price = get_price(ticker)
     return f'The current price of {ticker.upper()} is ${price: 2f}.'
 
+@app.get("/ticker")
+def ticker_post():
+    price = get_price(ticker)
+    return f'The current price of {ticker.upper()} is ${price: 2f}.'
 
 if __name__ == '__main__':
     app.run(debug=True)
