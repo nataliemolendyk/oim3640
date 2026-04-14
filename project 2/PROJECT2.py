@@ -5,15 +5,18 @@ from nltk.corpus import stopwords
 from nltk.sentiment import SentimentIntensityAnalyzer
 import nltk
 import math
+import os 
+import dotenv
 
+
+dotenv.load_dotenv()
+API_KEY = os.getenv("GENIUS_API_KEY")
 
 nltk.download('stopwords')
 nltk.download('vader_lexicon')
 stop_words = set(stopwords.words('english'))
 sia = SentimentIntensityAnalyzer()
 
-
-GENIUS_TOKEN = "TRW-dAC0og-QhkoOyBtc7_ZnnJYyloVwWVNZQfeLm9uprzMaHgyg37WpKhMIn0xh"  # Replace with your Genius API token
 
 songs = [
     {"title": "Die on This Hill", "artist": "Sienna Spiro", "year": 2025},
@@ -23,7 +26,7 @@ songs = [
     {"title": "Back to Blonde", "artist": "Sienna Spiro", "year": 2024},
 ]
 
-headers = {"Authorization": f"Bearer {GENIUS_TOKEN}"}
+headers = {"Authorization": f"Bearer {API_KEY}"}
 
 
 def search_song(title, artist):
