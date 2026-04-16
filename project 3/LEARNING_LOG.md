@@ -8,3 +8,14 @@ I'm confused if the current location will change or do I have to change the curr
 
 **What I learned:**
 I learned that I have to put the keys in the .env to protect them. The code that OpenAi produced, had the keys in the code, but I used what I learned from previous lessons and put them in the .env and then linked it to the running code.
+
+## Date: 2025-04-16
+
+**What I asked AI to do:**
+I asked AI to help create a flask that goes with my code. It originally didn't work with the code I had so I had it help me fix my code so it would match with the flask as well as the html.
+
+**What I didn't understand in the generated code:**
+There wasn't anything I didn't understand. The main purpose of using AI was to get the variable names correct by using the helloflask app as reference.
+
+**What I learned:**
+I learned that flask has a route for get, post, and route. AI first produced code that didn't have all three steps, but I learned that having the three steps made everything cleaner. I learned that all of the variables have to match and one mismatch would lead to the web app to not work.
