@@ -56,14 +56,20 @@ def find_stop_near(place_name):
     lat, lng = get_lat_lng(place_name)
     return get_nearest_mbta_stop(lat, lng)
 
-
 def main():
-    place = "Boston Common"
-    stop_name, accessible = find_stop_near(place)
+    place = input("Enter a location: ")
 
-    print(f"Nearest stop to '{place}':")
-    print(f"Stop name: {stop_name}")
-    print(f"Wheelchair accessible: {accessible}")
+    try:
+        stop_name, accessible = find_stop_near(place)
+
+        accessible_text = "Yes" if accessible else "No"
+
+        print(f"Nearest stop to '{place}':")
+        print(f"Stop name: {stop_name}")
+        print(f"Wheelchair accessible: {accessible_text}")
+
+    except Exception:
+        print(f"Could not find a stop near '{place}'. Please try again.")
 
 
 if __name__ == "__main__":
