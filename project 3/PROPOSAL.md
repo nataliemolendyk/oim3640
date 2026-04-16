@@ -1,7 +1,7 @@
 ## My Project Proposal
 
 **What I'm building:** 
-I am building a web that uses Flask to find the nearest MBTA station and allows the user to input name of a place or the address.
+I am building a web that uses Flask to find the nearest MBTA station and allows the user to input name of a place or the address. It also displays if that station is wheelchair accessible or not.
 
 **Why I chose this:** 
 I chose this because I have recently found my self using the MBTA much more often this semester and I never know the closest exit to get off when I am somewhere away from Wellesley. I also think this would help me find nearby stations when I am in a location I am not familiar with.
