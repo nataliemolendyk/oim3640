@@ -1,6 +1,6 @@
 from distro import name
 from flask import Flask, render_template
-from PROTOTYPE import find_stop_near
+from mbta import find_stop_near
 
 app = Flask(__name__)
 
@@ -14,6 +14,14 @@ def station(place_name):
         stop=stop_name,
         accessible=accessible
     )
+
+@app.route('/')
+def home():
+    return """
+    <h1>MBTA Finder</h1>
+    <p>Try visiting:</p>
+    <p>/station/Boston%20Common</p>
+    """
 
 if __name__ == '__main__':
     app.run(debug=True)
