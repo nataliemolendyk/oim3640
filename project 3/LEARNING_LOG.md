@@ -19,3 +19,14 @@ There wasn't anything I didn't understand. The main purpose of using AI was to g
 
 **What I learned:**
 I learned that flask has a route for get, post, and route. AI first produced code that didn't have all three steps, but I learned that having the three steps made everything cleaner. I learned that all of the variables have to match and one mismatch would lead to the web app to not work.
+
+## Date: 2025-04-16
+
+**What I asked AI to do:**
+I asked AI to help expand my code to incorporate the map, find the distance between the two points, and make the web application look more polished.
+
+**What I didn't understand in the generated code:**
+I was confused what the R = 3958.8 meant but I learned that it is the Earth's radius in miles and this is used to find the distance between points. I was a little confused about why the miles needed to be converted into radians.
+
+**What I learned:**
+I learned that the function def haversine finds the distances between two points using the latitude and longitude of each location. I learned that type 2 means that the code will only get the commuter rails which goes to more than 100 locations around Massachusetts. 

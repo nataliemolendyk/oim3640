@@ -1,0 +1,5 @@
+## What it does & How to run it
+This project takes Python code and creates a Flask app to display the results on a web application. The code first takes the Mapbox and MBTA API keys to get the train station locations and to turn the locations into coordinates. The mbta.py gives the user a link (when ran) to click to access the webpage where they should type in /stop to the URL bar and press enter. The commuter rail location search bar is then displayed.The user is asked to input the location they want and the Flask app will return the nearest commuter rail with if it has wheelchair accessiblity. A map is also displayed with the points of the station and the provided location. The distance is calculated with a haversine formula that converts the locations' coordinates to radians and finds the distance, then converts back to miles. 
+
+![alt text](<Screenshot 2026-04-21 091516.png>)
+![alt text](<Screenshot 2026-04-21 091559.png>)

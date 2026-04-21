@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request
-from mbta import find_stop_near
+from mbta import find_stop_near, MAPBOX_TOKEN
 
 app = Flask(__name__)
+
 
 @app.get("/stop")
 def stop_form():
@@ -9,38 +10,27 @@ def stop_form():
 
 
 @app.post("/stop")
-def stop_post():
+def stop_submit():
     place = request.form.get("place")
 
     if not place:
-        return "Please enter a location."
+        return render_template("stop.html", error="Please enter a location.")
 
     try:
-        stop_name, accessible = find_stop_near(place)
-        accessible_text = "Yes" if accessible else "No"
+        lat, lng, stop = find_stop_near(place)
 
-        return f"""
-        <h2>Result</h2>
-        <p>The nearest stop to <strong>{place.title()}</strong> is <strong>{stop_name}</strong>.</p>
-        <p>Wheelchair accessible: <strong>{accessible_text}</strong></p>
-        <a href="/stop">Search again</a>
-        """
+        return render_template(
+            "stop.html",
+            place=place,
+            lat=lat,
+            lng=lng,
+            stop=stop,
+            mapbox_token=MAPBOX_TOKEN
+        )
 
-    except Exception:
-        return f"This location '{place.title()}' is not valid. Please try again."
-
-
-@app.route('/stop/<place>')
-def stop(place):
-    try:
-        stop_name, accessible = find_stop_near(place)
-        accessible_text = "Yes" if accessible else "No"
-
-        return f"The nearest stop to {place.title()} is {stop_name}. Wheelchair accessible: {accessible_text}."
-
-    except Exception:
-        return f"Could not find a stop near '{place.title()}'."
+    except ValueError as e:
+        return render_template("stop.html", error=str(e))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
