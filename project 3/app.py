@@ -4,7 +4,7 @@ from mbta import find_stop_near, MAPBOX_TOKEN
 app = Flask(__name__)
 
 
-@app.get("/stop")
+@app.get("/stop"
 def stop_form():
     return render_template("stop.html")
 
