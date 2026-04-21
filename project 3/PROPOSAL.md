@@ -14,4 +14,4 @@ I chose this because I have recently found myself using the MBTA much more often
 
 **What I don't know yet:** 
 - I don't know how to use the API keys to convert the place names into coordinates
-- I don't how to incorporate a map
+- I don't how to incorporate a map into the flask app
