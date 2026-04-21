@@ -88,7 +88,7 @@ def get_nearest_mbta_stop(lat, lng):
                 }
 
     if not nearest:
-        raise ValueError("No commuter rail station found"
+        raise ValueError("No commuter rail station found")
 
     return nearest
 
